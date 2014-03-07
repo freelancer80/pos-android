@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:background="@drawable/note_book"
+        android:src="@drawable/image_box"
+        android:layout_marginTop="15dp"
+        android:contentDescription="@string/app_name" />
+
+    <RelativeLayout
+        android:id="@+id/main1"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:background="@drawable/qty_grd"
+        android:visibility="visible"
+        android:layout_weight="0.20"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:paddingTop="30dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:id="@+id/qty_layout"
+            android:visibility="visible"
+            
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/qty_decrement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/qty_dec"
+                 />
+            
+
+            <EditText
+                android:id="@+id/quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_gravity="right"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="1"
+                android:textStyle="bold"
+                android:hint="number"
+                android:focusable="true"
+                
+                android:textSize="25sp" >
+
+                <requestFocus />
+            </EditText>
+			<Button
+                android:id="@+id/qty_incre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/qty_inc"
+                 />
+        </LinearLayout>
+         <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/discount_layout"
+            android:layout_marginTop="50dp"
+            android:visibility="invisible"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/d_ruepee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="0.13"
+                android:background="@drawable/qty_discount"
+                 />
+
+            <Button
+                android:id="@+id/d_perc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="13dp"
+                android:layout_weight="0.13"
+                android:background="@drawable/qty_discount_perc" />
+        </LinearLayout>
+        
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/qty_discount_heading"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Quantity"
+            android:textColor="#800080"
+            android:textSize="25sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

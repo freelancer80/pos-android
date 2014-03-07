@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="@android:color/white">
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:textColor="#800080"
+        
+        android:text="Overall Discount"
+        android:layout_marginBottom="10dp"
+        android:textSize="25sp" />
+        
+        
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:textColor="#800080"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:text="The overall discount percentage will be applied on \n all the items in the order"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/discount_layout"
+            android:layout_marginTop="30dp"
+            android:visibility="visible"
+            
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal" >
+            
+            <Button
+                android:id="@+id/emp_discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="0.13"
+                android:background="@drawable/overall_dis_dis_bt" />
+
+            <Button
+                android:id="@+id/rupee_discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                
+                android:layout_marginRight="10dp"
+                android:layout_weight="0.13"
+                android:background="@drawable/overall_dis_cash_bt"
+                 />
+
+             <Button
+                android:id="@+id/perc_discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                
+                android:layout_marginRight="10dp"
+                android:layout_weight="0.13"
+                android:background="@drawable/overall_dis_perc_bt"
+                 />
+            
+        </LinearLayout>
+</LinearLayout>

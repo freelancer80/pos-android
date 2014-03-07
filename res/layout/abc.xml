@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+ 
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:stretchColumns="*" >
+	
+      <TableRow android:layout_margin="0dip">
+              <TextView android:text="1st Column"  android:background="#ffe9fe" android:layout_margin="1dip"/>
+              <TextView android:text="2nd Column"  android:background="#ffe9fe" android:layout_margin="1dip"/>
+               <TextView android:text="2nd Column"  android:background="#ffe9fe" android:layout_margin="1dip"/>
+                <TextView android:text="2nd Column"  android:background="#ffe9fe" android:layout_margin="1dip"/>
+                 <TextView android:text="2nd Column"  android:background="#ffe9fe" android:layout_margin="1dip"/>
+                  <TextView android:text="2nd Column"  android:background="#ffe9fe" android:layout_margin="1dip"/>
+                   <TextView android:text="2nd Column"  android:background="#ffe9fe" android:layout_margin="1dip"/>
+                    <TextView android:text="2nd Column"  android:background="#ffe9fe" android:layout_margin="1dip"/>
+                     <TextView android:text="2nd Column"  android:background="#ffe9fe" android:layout_margin="1dip"/>
+                      <TextView android:text="2nd Column"  android:background="#ffe9fe" android:layout_margin="1dip"/>
+
+     </TableRow>
+     <TableRow  android:layout_margin="0dip">
+              <TextView android:text="1st Column"  android:background="#ffe9fe" android:layout_margin="1dip"/>
+              <TextView android:text="2nd Column"  android:background="#ffe9fe" android:layout_margin="1dip"/>
+              
+
+     </TableRow>
+     <TableRow  android:layout_margin="0dip">
+              <TextView android:text="1st Column"  android:background="#ffe9fe" android:layout_margin="1dip"/>
+              <TextView android:text="2nd Column"  android:background="#ffe9fe" android:layout_margin="1dip"/>
+              
+
+     </TableRow>
+     <TableRow  android:layout_margin="0dip"
+         android:background="@android:drawable/list_selector_background">
+              <TextView android:layout_width="wrap_content"
+                  android:layout_height="30dp"
+                  android:text="1st Column"  android:background="#ffe9fe" android:layout_margin="1dip"/>
+              <TextView android:layout_width="wrap_content"
+                  android:layout_height="30dp"
+                  android:text="2nd Column"  android:background="#ffe9fe" android:layout_margin="1dip"/>
+             
+
+     </TableRow>
+</TableLayout>

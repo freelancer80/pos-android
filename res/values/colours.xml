@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>   
+    
+
+  <color name="sel_tab_color">#800080</color> 
+  <color name="un_sel_tab_color">#ffffff</color>
+  <color name="row">#d6d6d6</color> 
+   
+</resources>

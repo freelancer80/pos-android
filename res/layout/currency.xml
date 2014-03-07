@@ -1,0 +1,472 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/relativeLayout1"
+    android:background="#ffffff" >
+
+    
+        <LinearLayout
+            android:id="@+id/payment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/cash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="0.13"
+                android:background="@drawable/cash"
+                 />
+
+            <Button
+                android:id="@+id/credit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="0.13"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/credit_card_sel_disable" />
+
+            <Button
+                android:id="@+id/gift_voucher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="0.13"
+                android:background="@drawable/gift_voucher_disable"/>
+
+            <Button
+                android:id="@+id/return_cash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="0.13"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/returned_disable" />
+        </LinearLayout>
+    
+
+   <LinearLayout
+        android:id="@+id/main1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/payment"
+        android:layout_marginTop="5dp"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <LinearLayout
+            android:id="@+id/payment3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/cash_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               	android:layout_gravity="right"
+                android:text="5"
+                android:textColor="@android:color/transparent"
+                android:layout_weight="0.13"
+                android:background="@drawable/cash_5_note" />
+
+            <Button
+                android:id="@+id/cash_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="0.13"
+                android:text="10"
+                android:textColor="@android:color/transparent"
+                android:background="@drawable/cash_10_note" />
+
+            <Button
+                android:id="@+id/cash_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="20"
+                android:textColor="@android:color/transparent"
+                android:layout_weight="0.13"
+                android:background="@drawable/cash_20_note" />
+
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/payment1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/cash_50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="50"
+                android:textColor="@android:color/transparent"
+                android:layout_weight="0.13"
+                android:background="@drawable/cash_50_note" />
+
+            <Button
+                android:id="@+id/cash_100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="0.13"
+                android:text="100"
+                android:textColor="@android:color/transparent"
+                android:background="@drawable/cash_100_note" />
+
+            <Button
+                android:id="@+id/cash_200"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="200"
+                android:textColor="@android:color/transparent"
+                android:layout_weight="0.13"
+                android:background="@drawable/cash_200_note" />
+
+            
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/payment2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/cash1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:textColor="@drawable/button_text_change"
+                android:layout_weight="0.13"
+                android:textSize="20sp"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="@drawable/unit_cash"
+                android:text="300,00" />
+
+            <Button
+                android:id="@+id/cash2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.13"
+                android:textSize="20sp"
+                android:textColor="@drawable/button_text_change"
+                android:background="@drawable/unit_cash"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="400,00" />
+
+            <Button
+                android:id="@+id/cash3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:textColor="@drawable/button_text_change"
+                android:layout_weight="0.13"
+                android:textSize="20sp"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="@drawable/unit_cash"
+                android:text="500,00" />
+
+            
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/main2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/payment"
+        android:focusableInTouchMode="true"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+
+        <LinearLayout
+            android:id="@+id/payment4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_vertical"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/visa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               	android:layout_gravity="right"
+                
+                android:layout_weight="0.13"
+                android:background="@drawable/credit_card_visa" />
+
+            <Button
+                android:id="@+id/maestro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_weight="0.13"
+                android:background="@drawable/credit_card_masetro" />
+
+            <Button
+                android:id="@+id/master_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                
+                android:layout_weight="0.13"
+                android:background="@drawable/credit_card_master" />
+
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/payment5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_gravity="center|center_vertical"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/delta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                
+                android:layout_weight="0.13"
+                android:background="@drawable/credit_card_delta" />
+
+            <Button
+                android:id="@+id/solo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_weight="0.13"
+                android:background="@drawable/credit_card_solo" />
+
+            <Button
+                android:id="@+id/electron"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="0.13"
+                android:background="@drawable/credit_card_visa_electron" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/payment6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+            <Button
+                android:id="@+id/cash4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:textColor="@drawable/button_text_change"
+                android:layout_weight="0.13"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="@drawable/unit_cash"
+                android:textSize="20sp"
+                android:text="300,00" />
+
+            <Button
+                android:id="@+id/cash5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.13"
+                android:textSize="20sp"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="@drawable/button_text_change"
+                android:background="@drawable/unit_cash"
+                android:text="400,00" />
+
+            <Button
+                android:id="@+id/cash6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:textColor="@drawable/button_text_change"
+                android:layout_weight="0.13"
+                android:textSize="20sp"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="@drawable/unit_cash"
+                android:text="500,00" />
+
+            
+        </LinearLayout>
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:id="@+id/main3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:layout_below="@+id/payment"
+        android:focusableInTouchMode="true"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:visibility="visible" >
+        
+        
+        <TextView
+            android:id="@+id/voucher_heading"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="Gift Voucher"
+        	android:textSize="20sp"
+        	android:layout_marginLeft="15dp"
+        	android:textColor="#800080"
+        	android:visibility="invisible"
+        />
+        
+		<TableLayout
+		    android:layout_width="500dp"
+		    android:layout_height="wrap_content"
+		    android:stretchColumns="*" 
+		    android:layout_marginTop="20dp">
+            
+            <TableRow
+                android:id="@+id/row_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible">
+                 
+              <TextView
+                  android:text="Available Amount" 
+                  android:paddingLeft="10dp"
+                  android:paddingTop="5dp"
+                  android:paddingBottom="5dp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="35dp" 
+                  android:gravity="left|center_vertical"
+                  android:background="@drawable/row_gradient_pink"
+                  android:textColor="#800080"
+                  android:textSize="15sp"
+                  />
+              
+              <TextView 
+                  android:id="@+id/row_12"
+                  android:text="Available Amount" 
+                  android:layout_width="wrap_content"
+                  android:layout_height="35dp" 
+                  android:paddingRight="10dp"
+                  android:paddingTop="5dp"
+                  android:paddingBottom="5dp"
+                  android:gravity="right|center_vertical"
+                  android:background="@drawable/row_gradient_pink" 
+                  android:textColor="#800080"
+                  android:textSize="15sp"
+               />
+	     </TableRow>
+	     <TableRow  
+	         android:id="@+id/row_2"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:visibility="invisible">
+	         <TextView 
+	             android:text="Remaining Amount"  
+	             android:layout_width="wrap_content"
+	             android:paddingLeft="10dp"
+	             android:paddingTop="5dp"
+	             android:paddingBottom="5dp"
+	             android:layout_height="35dp"
+	             android:gravity="left|center_vertical"
+	             android:background="@drawable/row_gradient" 
+	             android:textColor="#800080" 
+	             android:textSize="15sp"
+	             />
+	         <TextView 
+	             android:id="@+id/row_22"
+	             android:text=""
+	             android:paddingRight="10dp"  
+	             android:paddingTop="5dp"
+	             android:paddingBottom="5dp"
+	             android:gravity="right|center_vertical"
+	             android:layout_width="wrap_content"
+	             android:layout_height="35dp"
+	             android:background="@drawable/row_gradient" 
+	             android:textColor="#800080" 
+	             android:textSize="15sp"
+	             />
+	     </TableRow>
+     </TableLayout>
+     
+    </LinearLayout>
+    
+	<LinearLayout
+        android:id="@+id/main4"
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        
+        android:layout_below="@+id/payment"
+        android:focusableInTouchMode="true"
+        
+        android:orientation="vertical"
+        android:visibility="visible" >
+        
+        <TextView
+            android:id="@+id/receipt_heading"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_marginLeft="15dp"
+        	android:textColor="#800080"
+        	
+        	android:text="Receipt# 0000"
+        	android:textSize="26sp"
+        	android:layout_marginTop="5dp"
+        	android:layout_marginBottom="5dp"
+        	android:visibility="visible" />
+       		
+		<ScrollView
+		    android:id="@+id/centreProgram_feedback"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:overScrollMode="always"
+		    android:orientation="horizontal">
+	       	
+			<TableLayout 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:id="@+id/return_items"
+	            
+	            android:stretchColumns="*">
+     		</TableLayout>
+     		
+      	</ScrollView>
+  	</LinearLayout>
+</RelativeLayout>

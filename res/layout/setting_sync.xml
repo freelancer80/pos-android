@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/relativeLayout1"
+    
+    android:background="#ffffff" >
+    
+    <ExpandableListView
+       android:id="@+id/listExpand"
+       android:layout_height="match_parent"
+       android:layout_width="match_parent"/>   
+    
+  <!--    <ListView 
+	    android:id="@android:id/list"
+	    
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+
+		/>
+    
+    
+    
+    <TableLayout
+    android:id="@+id/tableLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" 
+    >
+    
+    <TableRow
+        android:id="@+id/update_Items"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="30dp"
+        android:padding="5dip" >
+        
+        
+        <ImageView
+            android:id="@+id/listimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:textSize="25sp"
+            android:layout_gravity="left"
+            android:contentDescription="@string/hello_world"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sync" />
+ 
+        <TextView
+            android:id="@+id/update_text"
+            android:text="Update Items"
+            
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="#800080"
+            android:gravity="center_horizontal"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        
+ 
+    </TableRow>
+    <TableRow
+        android:id="@+id/update_Items1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        
+        android:padding="5dip" >
+ 
+        <TextView
+            android:id="@+id/update_text1"
+            android:text="Sycn item list with CMS"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#800080"
+            android:gravity="left"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+        
+        
+ 
+    </TableRow>
+ <View
+        android:layout_height="2dip"
+        android:background="#800080" />-->
+    <!-- edittext span 2 column -->
+   <!--  <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+ 
+        <TextView
+            android:id="@+id/textView1"
+            android:text="Raheel"
+            android:layout_marginLeft="10dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+ 
+        <TextView
+            android:id="@+id/button1"
+            android:text="gulberg"
+            android:layout_marginLeft="60dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </TableRow>
+ 
+    <View
+        android:layout_height="2dip"
+        android:background="#000000" />
+ 
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+ 
+        <TextView
+            android:id="@+id/textView1"
+            android:text="Rubab"
+            android:layout_marginLeft="10dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+ 
+        <TextView
+            android:id="@+id/button1"
+            android:text="gulberg"
+            android:layout_marginLeft="60dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </TableRow>
+  <View
+        android:layout_height="2dip"
+        android:background="#000000" /> -->
+
+   
+ 
+<!-- </TableLayout>
+-->
+   <!-- 
+    <ListView
+        android:id="@+id/setting_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+    </ListView>
+ -->
+    </RelativeLayout>

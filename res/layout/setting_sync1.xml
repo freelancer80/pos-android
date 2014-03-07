@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/relativeLayout1"
+    
+    android:background="#ffffff" >
+    
+    
+    <TextView
+            android:id="@+id/update_text"
+            android:text="SYSTEM"
+            android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:textSize="20sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="#800080"
+            android:gravity="left"
+             />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dip"
+        android:id="@+id/view1"
+        android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+        android:layout_below="@+id/update_text"
+        android:background="#800080" />
+    
+    <!--  <ListView
+              android:id="@+id/list_system"
+              android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/view1">
+         </ListView>
+     -->
+         <ListView
+            android:id="@android:id/list"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            
+            android:layout_below="@+id/view1" /> 
+        
+        <TextView
+            android:id="@+id/update_text2"
+            android:text="USER MANAGEMENT"
+            android:layout_below="@android:id/list"
+            android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:textSize="20sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:textColor="#800080"
+            android:gravity="left"
+             />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dip"
+        android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+        android:id="@+id/view2"
+        android:layout_below="@+id/update_text2"
+        android:background="#800080" />
+    
+    
+    
+    <!-- 
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/view2"
+            >
+        </ListView> -->
+
+    <Button
+        android:id="@+id/add_user"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/setting_onpressed"
+        android:drawableLeft="@drawable/ad_user"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/view2"
+        android:textColor="@drawable/button_text_change"
+        android:paddingLeft="30dp"
+        android:textSize="25sp"
+        android:gravity="left|center_vertical"
+        android:text="   Add User" />
+    
+    
+    <Button
+        android:id="@+id/view_user"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/setting_onpressed"
+        android:drawableLeft="@drawable/view_user"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/add_user"
+        android:textColor="@drawable/button_text_change"
+        android:paddingLeft="30dp"
+        android:textSize="25sp"
+        android:gravity="left|center_vertical"
+        android:text="   View All User" />
+    
+    <!-- <Button
+        android:id="@+id/note_sync"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/setting_onpressed"
+        android:drawableLeft="@drawable/view_user"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/view_user"
+        android:textColor="@drawable/button_text_change"
+        android:paddingLeft="30dp"
+        android:textSize="25sp"
+        android:gravity="left|center_vertical"
+        android:text="   Notes Sync" />
+         -->
+
+        </RelativeLayout>

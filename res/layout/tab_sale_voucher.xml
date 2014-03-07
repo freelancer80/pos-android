@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+    
+		<LinearLayout 
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:id="@+id/top_layout"
+	    	android:layout_alignRight="@+id/discount_layout"
+	    	android:layout_alignLeft="@+id/discount_layout"
+	    	android:background="@android:color/white">						
+
+	    <ImageView
+	        android:id="@+id/item_image"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:visibility="visible"
+	        android:background="@drawable/sell_voucher_img"
+	        android:src="@drawable/image_box"
+	        android:contentDescription="@string/app_name" />
+
+	    	<RelativeLayout
+		        android:id="@+id/main1"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/qty_grd"
+		        android:visibility="visible"
+		        android:layout_marginLeft="50dp"
+		        android:focusableInTouchMode="true"
+		        android:orientation="vertical"
+		        android:paddingTop="30dp" >
+	
+	        <LinearLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="50dp"
+	            android:id="@+id/qty_layout"
+	            android:visibility="visible"
+	            
+	            android:layout_centerHorizontal="true"
+	            android:orientation="horizontal" >
+	
+	            <Button
+	                android:id="@+id/qty_decrement"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="right"
+	                android:layout_marginLeft="5dp"
+	                android:layout_marginRight="5dp"
+	                android:background="@drawable/qty_dec"
+	                 />
+	            
+	
+	            <EditText
+	                android:id="@+id/quantity"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="right"
+	                android:gravity="center_vertical|center_horizontal"
+	                android:text="1"
+	                android:textStyle="bold"
+	                android:hint="number"
+	               
+	                android:textSize="25sp" >
+	
+	                <requestFocus />
+	            </EditText>
+				<Button
+	                android:id="@+id/qty_incre"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="left"
+	                android:layout_marginLeft="5dp"
+	                android:layout_marginRight="5dp"
+	                android:background="@drawable/qty_inc"
+	                 />
+	        </LinearLayout>
+	        
+	        
+	
+	       
+	
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentTop="true"
+	            android:layout_centerHorizontal="true"
+	            android:id="@+id/qty_discount_heading"
+	            android:gravity="center_horizontal|center_vertical"
+	            android:text="Add Qty Here"
+	            android:textColor="#800080"
+	            android:textSize="25sp" />
+	
+	    </RelativeLayout>
+     
+
+	</LinearLayout>
+	<LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/discount_layout"
+            android:layout_below="@+id/top_layout"
+            android:layout_marginTop="50dp"
+            android:visibility="visible"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/ruepee_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                
+                android:layout_marginRight="10dp"
+                android:layout_weight="0.13"
+                android:background="@drawable/tab_salevoucher_r5"
+                 />
+
+            <Button
+                android:id="@+id/ruepee_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                 android:layout_marginRight="10dp"
+                 android:layout_weight="0.13"
+                android:background="@drawable/tab_salevoucher_r10" />
+            <Button
+                android:id="@+id/ruepee_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                 android:layout_marginRight="10dp"
+                android:layout_weight="0.13"
+                android:background="@drawable/tab_salevoucher_r20" />
+            <Button
+                android:id="@+id/ruepee_50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                 android:layout_marginRight="10dp"
+                android:layout_weight="0.13"
+                android:background="@drawable/tab_salevoucher_r50" />
+            <Button
+                android:id="@+id/ruepee_100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                 android:layout_marginRight="10dp"
+                android:layout_weight="0.13"
+                android:background="@drawable/tab_salevoucher_r100" />
+        </LinearLayout>
+
+</RelativeLayout>
